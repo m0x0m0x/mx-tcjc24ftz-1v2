@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth&family=Unbounded&display=swap"
+      rel="stylesheet"
+    />
+    <title>03Tables</title>
+    <style>
+      * {
+        font-family: "Unbounded", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #211522;
+        font-family: "Amaranth", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      /* Azz */
+      .azz {
+        width: 10%;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        animation: spin 10s linear infinite;
+        transform-origin: 50% 50%;
+        border-radius: 100%;
+      }
+      @keyframes spin {
+        from {
+          transform: rotateY(10deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+
+      /* Azz */
+
+      /* Gradient Heading */
+      .gradtext {
+        padding-top: 8px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 800;
+        background: -webkit-linear-gradient(#b4fee7, #fd49a0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      /* Gradient Heading */
+
+      table {
+        width: 800px;
+        margin: 0 auto;
+        /* border: 2px solid #b4fee7; */
+        border-collapse: collapse;
+        color: #fd49a0;
+        font-size: 24px;
+      }
+      th,
+      td {
+        /* border: 2px solid #b4fee7; */
+        padding: 20px 22px;
+        text-align: left;
+      }
+      thead th {
+        background-color: #a16ae8;
+        width: 25%;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #b4fee73f;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Gradient Text -->
+    <div class="gradtext">
+      <h1>Table Component</h1>
+    </div>
+    <!-- END_HaderGradient -->
+
+    <!-- Tables development -->
+    <table>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>TheLainBack</th>
+          <th>TheWorkerBee</th>
+          <th>TheChar42</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80cm</td>
+          <td>60cm</td>
+          <td>220cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>70cm</td>
+          <td>65cm</td>
+          <td>80cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>90cm</td>
+          <td>80cm</td>
+          <td>100cm</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Tables development -->
+  </body>
+  <a href="/">
+    <img
+      src="https://i.postimg.cc/FKgYxK8v/as1.webp"
+      border="0"
+      alt="as1"
+      class="azz"
+    />
+  </a>
+</html>

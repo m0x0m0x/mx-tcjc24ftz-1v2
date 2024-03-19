@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accordion Component</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        color: #9b45bf;
+        border-top: 8px solid #3752a6;
+        background-color: #141f40;
+        line-height: 1;
+      }
+
+      .acc {
+        width: 800px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .item {
+        box-shadow: 0 0 32px 0 rgba(250, 55, 192, 0.2);
+        padding: 24px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 25px;
+        row-gap: 32px;
+        align-items: center;
+      }
+      .open {
+        border-top: 4px solid #9b45bf;
+        border-radius: 4px;
+        padding-top: 32px;
+      }
+
+      .open .hidden-box {
+        display: block;
+      }
+
+      .open .number,
+      .open .text {
+        color: #9b45bf;
+      }
+
+      .number,
+      .text {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .number {
+        color: #dee2e6;
+      }
+
+      .hidden-box {
+        grid-column: 2;
+        display: none;
+      }
+
+      .hidden-box p {
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #3752a6;
+      }
+
+      .hidden-box ul {
+        color: #c170e3;
+        margin-left: 20px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* align-items: center; */
+      }
+
+      /* Azz Section */
+      .azz {
+        width: 10%;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        animation: spin 10s linear infinite;
+        transform-origin: 50% 50%;
+        border-radius: 100%;
+      }
+      @keyframes spin {
+        from {
+          transform: rotateY(10deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+      /* Azz Section */
+
+      /* gradient text */
+      .gradtext {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 82px;
+        font-weight: 800;
+        background: -webkit-linear-gradient(#c252f2, #2a26a6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* .hidden-box li {
+        margin-bottom: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="gradtext">
+      <p>Accordian Component</p>
+    </div>
+    <div class="acc">
+      <div class="item">
+        <p class="number">01</p>
+        <p class="text">Where are this chairs</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            sapiente, voluptatibus cupiditate non aliquid qui aliquam
+            consequatur enim, deleniti ratione in eligendi rerum. Veniam
+            cupiditate esse numquam, quam in nobis!
+          </p>
+          <ul>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              modi dicta.
+            </li>
+            <li>Eos minus doloribus, praesentium modi impedit nemo iure?</li>
+            <li>doloremque nemo maxime est officiis aliquid quidem.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item open">
+        <p class="number">02</p>
+        <p class="text">How long do I have to return my chair</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            sapiente, voluptatibus cupiditate non aliquid qui aliquam
+            consequatur enim, deleniti ratione in eligendi rerum. Veniam
+            cupiditate esse numquam, quam in nobis!
+          </p>
+          <ul>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              modi dicta.
+            </li>
+            <li>Eos minus doloribus, praesentium modi impedit nemo iure?</li>
+            <li>doloremque nemo maxime est officiis aliquid quidem.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="number">03</p>
+        <p class="text">Woman Booty Sitting</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            sapiente, voluptatibus cupiditate non aliquid qui aliquam
+            consequatur enim, deleniti ratione in eligendi rerum. Veniam
+            cupiditate esse numquam, quam in nobis!
+          </p>
+          <ul>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              modi dicta.
+            </li>
+            <li>Eos minus doloribus, praesentium modi impedit nemo iure?</li>
+            <li>doloremque nemo maxime est officiis aliquid quidem.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <a href="/">
+    <img
+      src="https://i.postimg.cc/FKgYxK8v/as1.webp"
+      border="0"
+      alt="as1"
+      class="azz"
+    />
+  </a>
+</html>

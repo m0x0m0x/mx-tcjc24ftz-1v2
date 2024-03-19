@@ -1,0 +1,245 @@
+/* 
+--- 01 TYPO SYSTEM : 
+Spaces (px) - 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+Font Sizes (px) - 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Font Weights - 400 / 500 / 600 / 700
+
+Line Heights
+Default Line Height - 1
+
+--- 02 COLORS : 
+Primary - #e67e22
+Tints :
+Shades:
+Accents:
+Greys:
+
+--- 05 SHADOWS 
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+*/
+
+/* Main styler css */
+
+/* Global reseting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+/********************************************/
+/* General  Resusable Compoenents*/
+/********************************************/
+
+.heading-primary {
+  font-family: "Orbitron", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+  color: #f25cd9;
+  text-shadow: 0 0 1px rgba(228, 202, 219, 0.92),
+    0 0 10px rgba(228, 202, 208, 0.34), 0 0 4px rgba(242, 30, 182, 0.52),
+    0 0 7px rgba(242, 30, 200, 0.92);
+}
+
+.btn:link,
+.btn:visited {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 150px;
+
+  /* Transition Settings */
+  transition: all 300ms;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #bf3056;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #68051f;
+
+  /* glow on hover */
+  box-shadow: 0 1px 50px 2px #f052b9;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #9a1639;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fff;
+  /* border: 2px solid #bf3056; */
+  color: #bf3056;
+
+  /* Trick to add border inside*/
+  box-shadow: inset 0 0 0 3px #bf3056;
+
+  /* Glow on hover */
+  box-shadow: 0 1px 50px 2px #0cf25d;
+  letter-spacing: 3px;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/********************************************/
+/* Header*/
+/********************************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(https://i.giphy.com/l3q2RgN7WUjeUUXm0.webp);
+
+  /* Height fixed for being sticky */
+  height: 0.4rem;
+  padding: 2.3rem 6.8rem;
+}
+.logo {
+  height: 3.2rem;
+  width: 10rem;
+}
+
+/********************************************/
+/* Navvigation*/
+/********************************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link,
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #f2059f;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  display: inline-block;
+  color: #00ffff;
+  box-shadow: 0 1px 50px 1px #f2059f;
+  letter-spacing: 3px;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #bf3056;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #bf3056;
+  box-shadow: 0 1px 50px 1px #0cf25d;
+  letter-spacing: 3px;
+}
+
+/********************************************/
+/* Hero Section*/
+/********************************************/
+
+.section-hero {
+  /* background-color: #0a0e26; */
+  background-image: linear-gradient(#01021230, #2c023189),
+    url(https://i.giphy.com/l3q2RgN7WUjeUUXm0.webp);
+  background-size: cover;
+  padding: 3.1rem 0;
+}
+
+.hero {
+  max-width: 95rem;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 6.6rem;
+}
+
+.hero-description {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  color: #00ffff;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.btn {
+  font-family: "Orbitron", sans-serif;
+}
+
+.delivered-ships {
+  color: #f2059f;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 4rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.2rem;
+  border: 2px solid #f2059f;
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700px;
+}
+
+.delivered-text span {
+  text-shadow: 0 0 1px rgba(228, 202, 219, 0.92),
+    0 0 10px rgba(228, 202, 208, 0.34), 0 0 4px rgba(242, 30, 182, 0.52),
+    0 0 7px rgba(242, 30, 200, 0.92);
+}

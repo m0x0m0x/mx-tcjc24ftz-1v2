@@ -1,0 +1,95 @@
+/* External css file  */
+
+/* --------------------------- */
+/* This section my test */
+/* * {
+  background-color: #0f172a;
+  color: aquamarine;
+  justify-content: center;
+  text-align: center;
+  border-radius: 202px;
+} */
+
+* {
+  background-color: #444;
+  color: #b7b7b7;
+}
+
+/* This section my test */
+/* --------------------------- */
+
+/* Combining six selectors */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Pragraph Styles */
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Styling the lists */
+li {
+  font-size: 20px;
+}
+
+/* Descendent Selector */
+/* footer p {
+  font-size: 16px;
+} */
+
+/* Nested Headers */
+/* article header p {
+  font-style: italic;
+} */
+
+/* id selector */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* class selector */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Changing the unordered list styles */
+/* ul {
+  list-style: ;
+} */
+
+.related {
+  list-style: none;
+}

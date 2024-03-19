@@ -1,0 +1,8 @@
+"use strict";
+/* 
+XXX: DrinkHerPiss
+*/
+// === import zone ===
+import { mainHead, subHead, paraText } from "../../utils/text.js";
+// ======
+mainHead("XXX: DrinkHerPiss");

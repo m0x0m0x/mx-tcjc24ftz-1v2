@@ -1,0 +1,22 @@
+/* Cool styles you find on net */
+/* https://freefrontend.com/css-text-effects/ */
+/* The above is a nice page which cool styles, you got the hover effect fronm there */
+
+/* Hover Effect  */
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: "Gambetta", serif;
+  letter-spacing: -2px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(0, 54, 146);
+  outline: none;
+  text-align: left;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 10px;
+}

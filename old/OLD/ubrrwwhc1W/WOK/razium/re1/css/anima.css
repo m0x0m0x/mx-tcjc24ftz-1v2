@@ -1,0 +1,50 @@
+/* These are various animations styles which you will add*/
+
+/* Smooth Wiggle */
+.wiggle {
+  animation: move 10s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(5px, -5px);
+  }
+  60% {
+    transform: translate(-5px, -5px);
+  }
+  80% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Pulse */
+
+.pulse-glow {
+  animation: pulse 4s ease-in infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 5px #ff0404, 0 0 5px #f90505;
+  }
+
+  50% {
+    opacity: 0.8;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 5px #ff0404, 0 0 5px #f90505;
+  }
+}

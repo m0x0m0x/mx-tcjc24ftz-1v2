@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts section -->
+
+    <title>06ComponentsPussy</title>
+
+    <!-- Styles Section -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-color: #1a0e3e; */
+        /* color: #ff83f6; */
+        font-family: "Black Ops One", cursive;
+        padding: 10px 20px;
+      }
+
+      body::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("https://i.postimg.cc/bNKGQ07t/image.png");
+        background-repeat: no-repeat;
+        position: fixed;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(30%);
+        z-index: -1; /* Ensure the overlay is behind the content */
+      }
+
+      h1 {
+        /* text-align: center; */
+        font-size: 50px;
+        color: #ff83f6;
+      }
+
+      h2 {
+        /* text-align: center; */
+        font-family: "Changa", sans-serif;
+        color: #f26b5e;
+      }
+
+      h3 {
+        font-family: "Sunflower", sans-serif;
+        font-size: 30px;
+      }
+
+      .hdr {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .carr {
+        width: 20%;
+        border-radius: 50%;
+      }
+
+      .tabtext {
+        color: #0cf25d;
+        box-shadow: 0 0 32px 0 rgba(250, 55, 192, 0.2);
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        justify-items: center;
+        background-color: #0c002569;
+        border-top: 1px solid #9b45bf;
+      }
+
+      .tabtext-container {
+        width: 1000px;
+        margin: 50px auto;
+        row-gap: 32px;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #53e8f6;
+      }
+
+      /* Azz */
+      .azz {
+        width: 10%;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        animation: spin 10s linear infinite;
+        transform-origin: 50% 50%;
+        border-radius: 100%;
+      }
+      @keyframes spin {
+        from {
+          transform: rotateY(10deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+
+      /* Azz */
+    </style>
+
+    <!-- Styles Section -->
+  </head>
+  <body>
+    <div class="hdr">
+      <h1>06 Components Testing</h1>
+      <img
+        src="https://i.postimg.cc/mk1LBNhZ/image.png"
+        border="0"
+        alt="image"
+        class="carr"
+      />
+      <h2>Testing and building various web components from course</h2>
+    </div>
+    <div class="tabtext-container">
+      <div class="tabtext">
+        <a href="./01accordion.html" target="_blank">
+          <h3>Accordians</h3>
+        </a>
+        <h3>Test building an accordian component</h3>
+      </div>
+      <div class="tabtext">
+        <a href="./02caro.html" target="_blank">
+          <h3>Carousel</h3>
+        </a>
+        <h3>Carousel with chvron buttons</h3>
+      </div>
+      <div class="tabtext">
+        <a href="./03table.html" target="_blank">
+          <h3>Table</h3>
+        </a>
+        <h3>Simple Tables - Static Data</h3>
+      </div>
+    </div>
+  </body>
+  <a href="/">
+    <img
+      src="https://i.postimg.cc/FKgYxK8v/as1.webp"
+      border="0"
+      alt="as1"
+      class="azz"
+    />
+  </a>
+</html>

@@ -1,0 +1,773 @@
+/*Importing css for adding multiple styles*/
+
+/********************************************/
+/* Header*/
+/********************************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(https://i.giphy.com/l3q2RgN7WUjeUUXm0.webp);
+
+  /* Height fixed for being sticky */
+  height: 0.4rem;
+  padding: 2.3rem 6.8rem;
+}
+.logo {
+  height: 3.2rem;
+  width: 10rem;
+}
+
+/********************************************/
+/* Navigation*/
+/********************************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link,
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #f2059f;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  display: inline-block;
+  color: #00ffff;
+  box-shadow: 0 1px 50px 1px #f2059f;
+  letter-spacing: 3px;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #bf3056;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #bf3056;
+  box-shadow: 0 1px 50px 1px #0cf25d;
+  letter-spacing: 3px;
+}
+
+/********************************************/
+/* Hero Section*/
+/********************************************/
+
+.section-hero {
+  /* background-color: #0a0e26; */
+  background-image: linear-gradient(#01021230, #2c023189),
+    url(https://i.giphy.com/l3q2RgN7WUjeUUXm0.webp);
+  background-size: cover;
+  padding: 3.1rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 6.6rem;
+}
+
+.hero-description {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  color: #00ffff;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.btn {
+  font-family: "Orbitron", sans-serif;
+}
+
+.delivered-ships {
+  color: #f2059f;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 4rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.2rem;
+  border: 2px solid #f2059f;
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700px;
+}
+
+.delivered-text span {
+  text-shadow: 0 0 1px rgba(228, 202, 219, 0.92),
+    0 0 10px rgba(228, 202, 208, 0.34), 0 0 4px rgba(242, 30, 182, 0.52),
+    0 0 7px rgba(242, 30, 200, 0.92);
+}
+
+/********************************************/
+/* Featured Section */
+/********************************************/
+
+.section-featured {
+  background-image: linear-gradient(#01021230, #2c023189),
+    url(https://i.giphy.com/l1J3E6f7RJSm97wZy.webp);
+  background-size: cover;
+  padding: 5.8rem 1rem;
+}
+
+.heading-featured-in {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #db3745;
+  letter-spacing: 0.75px;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logos img {
+  border-radius: 20%;
+}
+
+/********************************************/
+/* How ir works section */
+/********************************************/
+
+.section-how {
+  color: #7ad94e;
+  font-family: "Orbitron", sans-serif;
+  padding: 9.6rem 5rem;
+  background-image: linear-gradient(#00000097, #05000695),
+    url(https://i.giphy.com/26FPKhUtNG3TW74f6.webp);
+  background-size: cover;
+}
+
+.step-description {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.step-image-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-image-box::before,
+.step-image-box::after {
+  content: "";
+  display: block;
+  border-radius: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-image-box::before {
+  width: 90%;
+  padding-bottom: 90%;
+  background-color: #ff009d12;
+}
+
+.step-image-box::after {
+  width: 80%;
+  padding-bottom: 80%;
+  background-color: #00c8ff12;
+}
+
+.step-img {
+  width: 70%;
+  border-radius: 10%;
+  z-index: 10;
+}
+
+.step-number {
+  font-size: 5.2rem;
+  font-weight: 600;
+  color: #00ffff;
+  margin-bottom: 1.2rem;
+}
+
+/********************************************/
+/* Shis Section - Section Ships */
+/********************************************/
+
+.section-ships {
+  font-family: "Orbitron", sans-serif;
+  padding: 9.6rem 0;
+  background-image: linear-gradient(#000000ae, #050006c7),
+    url(https://i.giphy.com/QN49tbyrOlDXa5MIEp.webp);
+  background-size: cover;
+}
+
+.ship {
+  box-shadow: 0 0.1rem 0.5rem rgba(9, 236, 104, 0.742);
+  background-color: rgba(2, 99, 42, 0.212);
+  border-radius: 9px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.ship:hover {
+  box-shadow: 0 0.3rem 1rem rgba(9, 236, 104, 0.537);
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+
+.ship-img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.ship-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #0cf25d;
+  margin: 10px 0 30px 0;
+}
+
+.ship-attributes {
+  list-style: none;
+  font-size: 1.2rem;
+  color: #0cf25d;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.ships-content {
+  padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: black;
+  padding: 0.4rem 0.8rem;
+  text-transform: uppercase;
+  background-color: #db3745;
+  letter-spacing: 1px;
+  border-radius: 20%;
+  font-weight: 600;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+.icon-text ion-icon {
+  margin-right: 1rem;
+  color: #db3745;
+}
+
+.first-word {
+  color: #00ffff;
+}
+
+.list-items {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 1rem;
+}
+
+.list ion-icon {
+  margin-right: 1rem;
+  color: #db3745;
+}
+
+.weapons--lists h3 {
+  font-size: 4rem;
+}
+
+.all-ships {
+  text-align: center;
+}
+
+/********************************************/
+/* Section Testimonials*/
+/********************************************/
+
+.section-testimonials {
+  font-family: "Orbitron", sans-serif;
+  color: #0cf25d;
+  padding: 2.6rem 0;
+  background-image: linear-gradient(#000000ae, #050006c7),
+    url(https://i.giphy.com/3ofSBj3yHMrgmqe5gs.webp);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+/* .testimonial {
+  overflow: hidden;
+} */
+
+.testimonial-container {
+  padding: 4.6rem;
+}
+
+.testimonial-img {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  transition: all 5.4s;
+}
+
+.testimonial-img:hover {
+  cursor: pointer;
+  transform: rotate(10deg);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.8rem;
+  column-gap: 2.4rem;
+  align-items: center;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  color: #00ffff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+  border-radius: 5%;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.3);
+}
+
+/********************************************/
+/* Pricing Section */
+/********************************************/
+
+.section-pricing {
+  font-family: "Orbitron", sans-serif;
+  color: #0cf25d;
+  padding: 4.6rem 4.6rem;
+  background-image: linear-gradient(#000000d2, #050006d7),
+    url(https://i.giphy.com/dfzbVh4XaYCAalgUG8.webp);
+  background-size: cover;
+}
+
+.pricing-plan {
+  box-shadow: 0 0.1rem 0.5rem rgba(9, 236, 104, 0.742);
+  background-color: rgba(2, 99, 42, 0.212);
+  border-radius: 9px;
+  /* overflow: hidden; */
+  transition: all 0.2s ease-in;
+  padding: 2.4rem 2.4rem;
+  width: 90%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+}
+
+.pricing-plan--complete {
+  background-color: rgba(99, 2, 91, 0.212);
+  box-shadow: 0 0.1rem 0.5rem rgba(236, 9, 217, 0.742);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best value";
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #f2059f;
+  font-weight: 700;
+  top: 4%;
+  right: -9%;
+  padding: 0.6rem 3rem;
+  transform: rotate(45deg);
+}
+
+.pricing-plan:hover {
+  box-shadow: 0 0.3rem 1rem rgba(9, 236, 104, 0.537);
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+
+.plan-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  font-size: 1.8rem;
+  color: #00ffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 4.2rem;
+  font-weight: 600;
+  color: #db3745;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 1.6rem;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #00ffff;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #db3745;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 3.2rem;
+  background-color: #0cf25d1d;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 1.6rem;
+  color: #00ffff;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+/********************************************/
+/* CTA */
+/********************************************/
+
+.section-cta {
+  font-family: "Orbitron", sans-serif;
+  color: #0cf25d;
+  padding: 4.6rem 4.6rem;
+  background-image: linear-gradient(#000000d2, #050006d7),
+    url(https://i.giphy.com/542gVkJv6f1dk0W60K.webp);
+  background-size: cover;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* box-shadow: 0 0.1rem 0.5rem rgba(9, 236, 104, 0.742); */
+
+  /* temporary Height */
+  overflow: hidden;
+}
+
+.cta-image-box {
+  background-image: url(https://i.giphy.com/xO69EAHeUyg4sajGEt.webp);
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
+  transition: all 4s ease-in;
+}
+
+.cta-image-box:hover {
+  transform: scale(1.1);
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #00ffff;
+  background-color: rgba(2, 99, 42, 0.212);
+  border-radius: 2%;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-heading-secondary {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 3.6rem;
+  animation: pulse 4s ease-in infinite;
+  font-weight: 700;
+  color: #f25cd9;
+  text-shadow: 0 0 1px rgba(228, 202, 219, 0.92),
+    0 0 10px rgba(228, 202, 208, 0.34), 0 0 4px rgba(242, 30, 182, 0.52),
+    0 0 7px rgba(242, 30, 200, 0.92);
+}
+
+.cta-form {
+  color: #0cf25d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #75fc69;
+  font-family: inherit;
+  border: none;
+  background-color: #065321;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px hsla(148, 93%, 45%, 0.546);
+  letter-spacing: 2.5px;
+}
+
+.cta-form input::placeholder {
+  color: #ffffff36;
+}
+
+.cta-form input:focus {
+  outline: none;
+  border: 4px solid #ff06bd;
+  box-shadow: 0 1px 5px hsla(148, 93%, 45%, 0.97);
+}
+
+/********************************************/
+/* Footer Section */
+/********************************************/
+
+.footer {
+  background-image: linear-gradient(#000000d2, #050006d7),
+    url(https://i.giphy.com/3oKIPy2jIv7yK1v7iM.webp);
+  background-size: cover;
+  color: #00ffff;
+  padding: 9.6rem;
+  border-top: 1px solid #f2059f3d;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #00ffff;
+  margin-top: auto;
+}
+
+.footer-logo-img {
+  width: 100%;
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #f2059f;
+  text-transform: uppercase;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  font-family: "Orbitron", sans-serif;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.footer-link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #00ffff;
+  transition: all 0.3s ease-in;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #00ffff;
+  box-shadow: 0 0.2px 5px 0.2px #f2059f;
+  letter-spacing: 1px;
+}
+
+/********************************************/
+/* Animation Testing here */
+/********************************************/
+
+/* These are various animations styles which you will add*/
+
+/* Smooth Wiggle */
+.wiggle {
+  animation: move 10s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(5px, -5px);
+  }
+  60% {
+    transform: translate(-5px, -5px);
+  }
+  80% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Pulse */
+
+.pulse-glow {
+  animation: pulse 4s ease-in infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 5px #ff0404, 0 0 5px #f90505;
+  }
+
+  50% {
+    opacity: 0.8;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 5px #ff0404, 0 0 5px #f90505;
+  }
+}
